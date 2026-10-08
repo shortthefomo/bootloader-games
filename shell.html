@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tetris</title>
+<style>
+body{margin:0;background:#12151c;color:#eee;font:14px system-ui,sans-serif;text-align:center}
+h1{margin:10px 0 0;font-size:14px;letter-spacing:.22em}
+p{margin:6px 0}
+#c{height:62vh;background:#000;touch-action:none}
+#pad{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;width:min(94vw,420px);margin:8px auto}
+button{font:18px system-ui;padding:14px 0;background:#243044;color:#fff;border:0;border-radius:8px}
+button:active{background:#33425c}
+#H{grid-column:span 4;font-size:14px;letter-spacing:.12em}
+#hint{margin:0 0 8px;font-size:12px;opacity:.6}
+#over{position:fixed;inset:0;background:#000b;display:grid;place-items:center}
+#over[hidden]{display:none}
+#card{background:#222;padding:20px 26px;border-radius:12px}
+#fs{font-size:28px;margin:8px 0 12px}
+</style>
+</head>
+<body>
+<h1>TETRIS</h1>
+<p>score <b id=sc>0</b> &middot; lines <b id=ln>0</b> &middot; lv <b id=lv>1</b></p>
+<canvas id=c width=160 height=320></canvas>
+<div id=pad>
+<button id=L>&#9664;</button>
+<button id=U>&#8635;</button>
+<button id=R>&#9654;</button>
+<button id=D>&#9660;</button>
+<button id=H>DROP</button>
+</div>
+<p id=hint>Arrows move. Up rotates. Space drops. Swipe the board.</p>
+<div id=over hidden><div id=card><b>GAME OVER</b><div id=fs>0</div><button id=ag>Again</button></div></div>
+<script>
+/*__GAME__*/
+</script>
+</body>
+</html>

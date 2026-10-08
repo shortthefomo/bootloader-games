@@ -1,0 +1,17 @@
+{
+  "name": "xahau-pwa",
+  "private": true,
+  "type": "module",
+  "description": "Tetris and Doom boot documents for the Xahau AppLoader.",
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node test.mjs",
+    "publish": "node publish.mjs"
+  },
+  "dependencies": {
+    "xrpl-accountlib": "^9.3.2"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.12"
+  }
+}
